@@ -167,7 +167,7 @@ Released 2014 - August 25th Ver 1.0
                  NOTE: the summarisation process produces 1 mean row for each individual and
                  each activity, leading thus to 30(individuals)*6(activities)=180 rows.
                  In case in the future the original dataset changed (different number of
-                 subjects and activities) the number of rows may change.
+                 subjects and activities) the number of rows may change according to this rule.
                  
                  
                  
@@ -332,13 +332,15 @@ in a markdown editor, like GitHub viewer)
 
 **NOTE**:  * "activity" field is character (string) in spooled file, factorised character string in the R dataset	
 
-**NOTE ON UNITS OF MEASURE**: Dear reader, I know a good CodeBook should also point out Units of Measure for each variable.
+**NOTE ON UNITS OF MEASURE**: Dear reader, I know that a good CodeBook should also point out Units of Measure for each variable.
 Though, I am not a physician, and I don't know what might be a unit of measure of a Frequency derived measure (through Fourier
 transformation, or a Jerk signal, or a Magnitude.) 
-The only things I might get to are
-* accelerations are generally measured in metres per second (m/s)
-* the mean I made in my summarisation didn't change the units of measure
+The only things I might get to are:
+
+- accelerations are generally measured in metres per square second (m/s^2) if linear or radiant per square second (rad/s^2) if angular
+- the mean I made in my summarisation didn't change the units of measure
 ... but more than that I'm not sure what the original units of measure are...the original UCI dataset didn't talk about the Units of Measure.
+Also some research on the forums and on the net didn't bring any hint.
 Please don't subtract marks for this!
 Thanks
 
